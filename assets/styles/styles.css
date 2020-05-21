@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --fontPoppin: 'Poppins', sans-serif;
+    --fontRoboto: 'Roboto', sans-serif;
+    --headerColor: rgba(10, 10, 110, 0.753);
+    --fontColor: rgb(113, 113, 214);
+}
+
+body {
+    color: var(--fontColor);
+}
+
+h1, h2, h3, h4 {
+    color: var(--headerColor);
+}
+
+body {
+    background: url('../images/texture-background.jpg') no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#diceRoller {
+    display: flex;
+    flex-direction: column;
+}
+
+.numberDice {
+    display: flex;
+    width: 100%;
+}
+
+.numberSidesDice {
+    display: flex;
+    width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    width: 40px;
+    margin: 0 5px 10px 0;
+    padding: 3px 5px;
+    font-size: 16px;
+}
+
+label {
+    color: black;
+    font-size: 15px;
+    margin: 6px 0 0 0;
+}
+
+.buttonStyles {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5px 0;
+}
+
+#totalRoll {
+    background: white;
+    padding: 5px 15px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.diceUlList li {
+    list-style: none;
+    background: white;
+    color: black;
+    padding: 22px 25px;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    margin: 0 5px 5px 0;
+    border-radius: 20px;
+}

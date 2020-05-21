@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Dice Roller</h1>
+    </header>
+
+    <main>
+        <!-- User Input and Roll -->
+        <div id="diceRoller">
+            <div class="numberDice">
+                <input class="totalDice" type="number">
+                <label title="Number of Dice">Number of Dice to Roll (Number of Rolls)</label>
+            </div>
+            <div class="numberSidesDice">
+                <input class="diceSides" type="number">
+                <label title="Number of Sides on Die">Number of Sides on the Dice</label>
+            </div>
+            <div class="buttonStyles">
+                <button class="rollButton">Roll!</button>
+                
+                <!-- Results of the Roll -->
+                <div id="totalRoll">
+                    Total: <span class="rollResult"></span>
+                </div>
+
+                <!-- Reset the Roll -->
+                <button class="resetRolls">Reset</button>
+            </div>
+
+      
+
+        <!-- Show the results of the roll -->
+        <div class="buttonStyles">
+            <button class="showDice">Show Values of Dice</button>
+        </div>
+        <div class="diceList">
+            <ul class="diceUlList"></ul>
+        </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- For later Use -->
+    </footer>
+    
+    <!-- Load the main javascript -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
